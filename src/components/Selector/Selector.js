@@ -35,12 +35,24 @@ export default function Selector({ setHead, setMiddle, setBottom, catchphrase, s
         <label>
           Add a catch phrase
           <input id="catchphrase-input" onChange={(e) => setCatchphrase(e.target.value)} />
-          <button id="catchphrase-button">Add</button>
+          <button
+            id="catchphrase-button"
+            onClick={(e) => {
+              console.log('clicked!');
+              e.preventDefault();
+              const p = document.createElement('p');
+              p.textContent = `${catchphrase}`;
+              const catchphrases = document.getElementById('catchphrases');
+              catchphrases.append(p);
+            }}
+          >
+            Add
+          </button>
         </label>
       </div>
       <div id="stats">
         <p id="report"></p>
-        <div id="catchphrases">{catchphrase}</div>
+        <div id="catchphrases"></div>
       </div>
     </div>
   );
