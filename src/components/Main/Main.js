@@ -10,8 +10,8 @@ export default function Main() {
   const [catchphrase, setCatchphrase] = useState('');
   return (
     <main>
-      <Selector {...{ setHead, setMiddle, setBottom, catchphrase, setCatchphrase }} />;
-      <Preview {...{ head, middle, bottom }} />;
+      <Selector {...{ setHead, setMiddle, setBottom, catchphrase, setCatchphrase }} />
+      <Preview {...{ head, middle, bottom }} />
     </main>
   );
 }
