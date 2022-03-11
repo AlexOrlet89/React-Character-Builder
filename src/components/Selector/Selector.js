@@ -38,7 +38,6 @@ export default function Selector({ setHead, setMiddle, setBottom, catchphrase, s
           <button
             id="catchphrase-button"
             onClick={(e) => {
-              console.log('clicked!');
               e.preventDefault();
               const p = document.createElement('p');
               p.textContent = `${catchphrase}`;
