@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Preview from '../Preview/Preview';
-import Selector from '../Selector/Selector';
+import Preview from '../../components/Preview/Preview';
+import Selector from '../../components/Selector/Selector';
 import './Main.css';
 
 export default function Main() {
