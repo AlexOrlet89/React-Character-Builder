@@ -5,13 +5,22 @@ export default function Preview({ head, middle, bottom }) {
     <div className="right">
       <div className="character">
         <div className="bg head" id="head">
-          {head}
+          <img
+            style={{ height: '200px' }}
+            src={`${process.env.PUBLIC_URL}/assets/${head}-head.png`}
+          />
         </div>
         <div className="bg middle" id="middle">
-          {middle}
+          <img
+            style={{ height: '200px' }}
+            src={`${process.env.PUBLIC_URL}/assets/${middle}-middle.png`}
+          />
         </div>
         <div className="bg bottom" id="bottom">
-          {bottom}
+          <img
+            style={{ height: '200px' }}
+            src={`${process.env.PUBLIC_URL}/assets/${bottom}-pants.png`}
+          />
         </div>
       </div>
     </div>
